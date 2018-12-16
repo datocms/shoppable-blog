@@ -1,0 +1,33 @@
+.post
+
+.post__cover-image
+  position: relative
+  +vertical-padding(20)
+
+.post__overlay
+  +position(absolute, 0 0 0 0)
+  background-color: rgba($black-color, 0.5)
+  z-index: 2
+
+.post__title
+  z-index: 3
+  color: white
+  +position(relative)
+  text-align: center
+  +heading-font-family
+  +font-size(alpha)
+  line-height: 1.2
+  max-width: 800px
+  margin: auto
+
+.post__author
+  z-index:: 3
+  color: white
+  +position(relative)
+  text-align: center
+  +margin-top(0.5)
+  +font-size(gamma)
+  opacity: 0.8
+
+.post__content
+  +margin-top(2.5)

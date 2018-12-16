@@ -1,0 +1,29 @@
+a.item
+  text-decoration: none
+
+  &:hover
+    .item__image
+      transform: rotate(10deg)
+
+.item__body
+  +margin-top(5)
+
+.item__title
+  +margin-top(1)
+  +font-size(delta)
+  +heading-font-family
+  line-height: 1.2
+
+.item__image
+  +position(relative)
+  +vertical-padding(10)
+  transition: transform .1s $material-ease
+
+.item__author
+  +margin-top(0.5)
+  color: $grey-d-color
+
+.item__excerpt
+  @extend .formatted-content
+  +margin-top(1)
+  +font-size(smallprint)
